@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="slides.js"></script>
+  <title>Palestra Ime</title>
+</head>
+<script src="https://kit.fontawesome.com/22fa2b6e93.js" crossorigin="anonymous"></script>
+<body>
+
+  <div id="hero-div">
+
+    <header id="bow" class="d-flex flex-wrap align-items-center justify-content-md-between py-2 mb-3 pb-4 px-4">
+      <div class="col-2 d-flex justify-content-center">
+        <h4 id="important-text" class="fw-bold">Palestra Ime</h4>
+      </div>
+
+      <nav class="col-8 navbar navbar-expand-lg navbar-light">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav"> 
+            <li class="nav-item">
+              <a id="nav-text" class="nav-link px-5 link-dark h6" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a id="nav-text" class="nav-link px-5 link-dark h6" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a id="nav-text" class="nav-link px-5 link-dark h6" href="#">Service</a>
+            </li>
+            <li class="nav-item">
+              <a id="nav-text" class="nav-link px-5 link-dark h6" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a id="nav-text" class="nav-link px-5 link-dark h6" href="#">Help</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-2">
+          <a id="header-button" type="button" class="btn btn-outline-danger rounded-pill" href="login.html">Admin Login</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+
+    <div id="hero" class="container d-flex justify-content-between">
+      <div class="row flex-row-reverse align-items-center py-5">
+        <div class="col-lg-5">
+          <iframe width="575" height="325" src="https://youtu.be/89yP76HLtjc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="col-lg-1">
+          </div>
+          <div class="col-lg-6">
+            <p id="important-text" class="display-3 lh-md fw-bold">Let's Exercise For Your Health</p>
+            <span id="sub-text" class="fw-bold lh-lg">
+              Health is the top priority, let's train your body fitness with us who always provide the best service and results
+            </span>
+            <br>
+            <br>
+            <a id="hero-button" type="button" class="btn btn-outline-danger btn-lg px-4 me-md-2 rounded-pill" href="#form">Get Started</a>
+            <button id="hero-button" type="button" class="btn btn-outline-danger btn-lg px-4 me-md-2 rounded-pill">Read More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 2-->
+
+    <div id="second-section" class="container overflow-hidden">
+      <div id="second-section-row" class="row justify-content-center">
+        <div class="col-6">
+          <center>
+            <p id="sub-title" class="fw-bold">Our Service's</p>
+            <p id="important-text" class="display-5 fw-bold">There's an attractive package for you.</p>
+          </center>
+        </div>
+      </div>
+      <div class="row gx-5">   
+        <div class="col-lg-4">
+          <div>
+            <img src="media/yoga.jpg" id="services-images" class="img-fluid"/>
+          </div>
+          <p id="services-headers">Yoga Aerobic</p>
+          <p id="services-description" class="fw-bold">Yoga is one of the most <br> popular</p>
+        </div>
+        <div class="col-lg-4">
+          <div>
+            <img src="media/aerodinamica.jpg" id="services-images" class="img-fluid"/>
+          </div>
+          <p id="services-headers">Aerodinamica</p>
+          <p id="services-description" class="fw-bold">Aerodynamics makes your <br> body</p>
+        </div>
+        <div class="col-lg-4">
+          <div>
+            <img src="media/meditation.jpg" id="services-images" class="img-fluid"/>
+          </div>
+          <p id="services-headers">Meditation</p>
+          <p id="services-description" class="fw-bold">Meditation is to keep the <br> mind</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Section 3 -->
+
+    <div id="third-section" class="container">
+      <div class="row">
+        <div id="third-section-column" class="col-lg-5">
+          <p id="sub-title" class="fw-bold">About us</p>
+          <p id="important-text" class="display-5 fw-bold">We are the best fitness provider in the world</p>
+          <p id="about-description" class="fw-bold lh-lg">we are the best sports service provider in the world, we always <br> provide <br> pleasant service, coupled with professional and trained instructors</p>
+          <a type="button" class="btn btn-outline-danger rounded-pill fs-5" href="#form">Get Started</a>
+        </div>
+        <div class="col"></div>
+        <div class="col-lg-5">
+          <div id="tab-gallery">
+            <div id="main-img-slideshow">
+              <img id="imageBox" src="media/pose.jpg">
+            </div>
+            <div id="tab-gallery-small-img">
+              <img src="media/pose.jpg" onclick="tabGallerySlides(this)">
+              <img src="media/yoga.jpg" onclick="tabGallerySlides(this)">
+              <img src="media/aerodinamica.jpg" onclick="tabGallerySlides(this)">
+              <img src="media/stretch.jpg" onclick="tabGallerySlides(this)">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 4 --> 
+
+    <div id="fourth-section" class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div id="fourth-section-images-div">
+            <img src="media/meditation.jpg" id="fourth-section-first-image">
+            <img src="media/yoga.jpg" id="fourth-section-second-image">
+          </div>
+        </div>
+        <div class="col"></div>
+        <div class="col-lg-6">
+          <p id="sub-title" class="fw-bold" >Our Trainer's</p>
+          <p id="important-text" class="display-5 fw-bold">Best coaches and professionals in their fields</p>
+          <p id="about-description" class="fw-bold lh-lg">A reliable and experienced trainer, it is very fun to exercise in a fun way so that your body and mind will be fresher and fit both physically and spiritually</p>
+          <a type="button" class="btn btn-outline-danger rounded-pill fs-5" href="#form">Get Started</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 5 -->
+
+    <div id="fifth-section" class="container overflow-hidden">
+      <div id="fifth-section-row" class="row justify-content-center">
+        <div class="col-6">
+          <center>
+            <p id="sub-title" class="fw-bold">Our Pricing</p>
+            <p id="important-text" class="display-5 fw-bold">Select your training plan</p>
+          </center>
+        </div>
+      </div>
+
+      <div class="row gx-5">  
+
+        <!-- 1st Pricing -->
+        <div class="col-lg-4">
+          <div id="card" class="p-5 rounded-lg shadow">
+            <h4>Basic / 1 Month</h4>
+            <p id="important-text" class="display-5 fw-bold mt-4">$12<span class="fs-5"> / month</span></p>
+
+            <ul id="card-list" class="list-unstyled my-5 text-small text-left">
+              <li class="mb-2">
+                <i class="fa-solid fa-circle-check text-danger"></i>  Got access only for 1</li>
+                <li class="mb-2">
+                  <i class="fa-solid fa-circle-check text-danger"></i>  Get free drinks</li>
+                  <li class="mb-2">
+                    <i class="fa-solid fa-circle-check text-danger"></i>  Free parking for 1</li>
+                  </ul>
+                  <div id="fifth-section-first-pricing" class="row justify-content-center">
+                    <a id="card-button" class="btn btn-outline-danger rounded-pill" href="#form">Get Started</a>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- 2nd Pricing -->
+        <div class="col-lg-4">
+          <div id="card" class="p-5 rounded-lg shadow">
+            <h4>Premium / 6 Months</h4>
+            <p id="important-text" class="display-5 fw-bold mt-4">$24<span class="fs-5"> / month</span></p>
+
+            <ul id="card-list" class="list-unstyled my-5 text-small text-left">
+              <li class="mb-2">
+                <i class="fa-solid fa-circle-check text-danger"></i>  Got access only for 1</li>
+              <li class="mb-2">
+                <i class="fa-solid fa-circle-check text-danger"></i>  Get free drinks</li>
+              <li class="mb-2">
+                <i class="fa-solid fa-circle-check text-danger"></i>  Free parking for 1</li>
+              <li class="mb-2">
+                <i class="fa-solid fa-circle-check text-danger"></i>  Private workout in special</li>
+            </ul>
+            <div id="fifth-section-second-pricing" class="row justify-content-center">
+              <a id="card-button" class="btn btn-outline-danger rounded-pill" href="#form">Get Started</a>
+            </div>
+          </div>
+        </div>
+
+                      <!-- 3rd Pricing -->
+        <div class="col-lg-4">
+          <div id="card" class="p-5 rounded-lg shadow">
+            <h4>Super / 12 Months</h4>
+            <p id="important-text" class="display-5 fw-bold mt-4">$32<span class="fs-5"> / month</span></p>
+            
+            <ul id="card-list" class="list-unstyled my-5 text-small text-left">
+              <li class="mb-2">
+                <i class="fa-solid fa-circle-check text-danger"></i>  Got access only for 1</li>
+              <li class="mb-2">
+                <i class="fa-solid fa-circle-check text-danger"></i>  Get free drinks</li>
+              <li class="mb-2">
+                <i class="fa-solid fa-circle-check text-danger"></i>  Free parking for 1</li>
+              <li class="mb-2">
+                <i class="fa-solid fa-circle-check text-danger"></i>  Private workout in special</li>
+              <li class="mb-2">
+                <i class="fa-solid fa-circle-check text-danger"></i>  Access to the fitness</li>
+            </ul>
+            <div class="row justify-content-center">
+              <a id="card-button" class="btn btn-outline-danger rounded-pill" href="#form">Get Started</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+                  <!-- Section 6 -->
+
+    <div id="important-div" class="container-fluid">
+      <center class="pt-5">
+        <div class="pt-5">
+          <h1 id="important-text" class="display-5 fw-bold">Get Started Now</h1>
+          <p id="sub-text" class="fw-bold lh-lg">
+            Let's join now and have a pleasant experience with us and also very <br> satisfying
+          </p>
+        </div>
+        <div class="pt-5">
+          <a id="hero-button" type="button" class="btn btn-outline-danger btn-lg px-4 me-md-2 rounded-pill" href="#form">Get Started</a>
+          <button id="hero-button" type="button" class="btn btn-outline-danger btn-lg px-4 me-md-2 rounded-pill">Read More</button>
+        </div>
+      </center>
+    </div>
+
+                  <!-- Section 7 -->
+
+    <div id="seventh-section">
+      <center class="pt-5">
+        <div id="form" class="pt-5 pb-3">
+          <h1 id="important-text" class="display-5 fw-bold">Get Started Now</h1>
+          <p id="sub-text" class="fw-bold lh-lg">
+            Let's join now and have a pleasant experience with us and also very <br> satisfying
+          </p>
+        </div>
+      </center>
+      <div id="seventh-section-form-row" class="container-fluid row">
+        <div id="form-border" class="col-6">
+          <br>
+          <p id="form-header" class="display-5">Get Consultantion</p>
+          <p id="form-tagline" class="fs-5 col-8">The sky was cloudless and of a deep dark blue. The spectacle before us was indeed sublime.</p>
+          <form id="form-input" action="form.php" method="post">
+            <select id="priority" class="form-control mb-2 p-3 px-4 w-100" name="priority">
+              <option value="Basic/ 1 Month" >Basic/ 1 Month</option>
+              <option value="Premium/ 6 Months">Premium/ 6 Months</option>
+              <option value="Super/ 12 Months">Super/ 12 Months</option>
+            </select>
+            <input type="text" class="form-control mb-2 p-3 px-4 w-100" placeholder="Your Name" name="name">
+            <input type="email" class="form-control mb-2 p-3 px-4 w-100" placeholder="Your Email" name="email">
+            <input type="text" class="form-control mb-2 p-3 px-4 w-100" placeholder="Phone" name="phone">
+            <textarea class="form-control mb-2 p-3 px-4 w-100" id="floatingInput" rows="5" cols="10" placeholder="Type your message..." name="message"></textarea>
+            <button id="submit" type="submit" class="btn btn-dark pt-2 pb-2 mt-2 float-start">Register</button>
+            <br>
+          </form>
+        </div>
+        <div class="col-5">
+          <div id="contacts-border" class="row p-6">
+            <div id="seventh-section-contact-row" class="row">
+              <div class="row p-3">
+                <div class="col-2 pt-2">
+                  <img src="media/phone.png" id="seventh-section-phone-image"> 
+                </div>
+                <div class="col-9">
+                  <p id="seventh-section-phone-number" class="fs-1">+1 (2345) 678-90-12</p>
+                </div>
+              </div>
+              <div class="row">
+                <p id="form-tagline">The sky was cloudless and of a deep dark blue. The <br> spectacle before us was indeed sublime.</p>
+              </div>
+              <div class="row pt-2">
+                <div class="col-2">
+                  <img src="media/email.png" id="seventh-section-email-image">
+                </div>
+                <div class="col-6">
+                  <p class="fs-4 pt-2" id="seventh-section-email">contact@contact.com</p>
+                </div>
+              </div>
+              <div class="row pt-4">
+                <p id="form-tagline">The sky was cloudless of a deep dark blue.</p>
+              </div>
+            </div>
+          </div>
+          <div id="newsletter-border" class="row p-5">
+            <p id="newsletter-header" class="display-4" style="color: white;">Newsletter</p>          
+            <div class="col">
+              <input id="newsletter" type="email" class="form-control mb-4 p-3 px-4" placeholder="Your Email">
+            </div>
+            <div class="col">
+              <button id="subscribe" class="btn btn-dark pt-3 pb-3" type="subscribe">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+                  <!-- Footer -->
+
+    <footer class="p-5">
+      <div class="row row-cols-5 p-5">
+        <div class="col">
+          <h3 class="text-white">Palestra Ime</h3>
+          <ul class="nav flex-row">
+            <li class="nav-item me-2"><a href="#"><img src="media/facebook.png" id="footer-icons"></a></li>
+            <li class="nav-item me-2"><a href="#"><img src="media/twitter.png" id="footer-icons"></a></li>
+            <li class="nav-item me-2"><a href="#"><img src="media/cube.png" id="footer-icons"></a></li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <ul class="nav flex-column">
+            <li class="nav-item mb-3"><a id="footer-header" href="#" class="nav-link p-0 h3">Company</a></li>
+            <li class="nav-item mb-3"><a href="#" class="nav-link p-0" id="footer-li" >About</a></li>
+            <li class="nav-item mb-3"><a href="#" class="nav-link p-0" id="footer-li" >Cases</a></li>
+            <li class="nav-item mb-3"><a href="#" class="nav-link p-0" id="footer-li" >Blog</a></li>
+            <li class="nav-item mb-3"><a href="#" class="nav-link p-0" id="footer-li" >Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <ul class="nav flex-column">
+            <li class="nav-item mb-3"><a id="footer-header" href="#" class="nav-link p-0 h3">Features</a></li>
+            <li class="nav-item mb-3"><a href="#" class="nav-link p-0" id="footer-li">Corporate</a></li>
+            <li class="nav-item mb-3"><a href="#" class="nav-link p-0" id="footer-li">Data Privacy</a></li>
+            <li class="nav-item mb-3"><a href="#" class="nav-link p-0" id="footer-li">Employment</a></li>
+            <li class="nav-item mb-3"><a href="#" class="nav-link p-0" id="footer-li">Intellectual</a></li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <ul class="nav flex-column">
+            <li class="nav-item mb-3"><a id="footer-header" href="#" class="nav-link p-0 h3">About Us</a></li>
+            <li class="nav-item mb-2"><p class="nav-link p-0" id="footer-li">Who are we</p></li>
+            <li class="nav-item"><p class="nav-link p-0 lh-lg" id="footer-li">Privacy <br> Terms & <br> FA</p></li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <ul class="nav flex-column">
+            <li class="nav-item mb-3"><a id="footer-header" href="#" class="nav-link p-0 h3">Contact</a></li>
+            <li class="nav-item mb-2"><p class="nav-link p-0" id="footer-li">(684) 555-0102</p></li>
+            <li class="nav-item"><p class="nav-link p-0" id="footer-li">palestraime@email.com</p></li>
+            <li class="nav-item"><p class="nav-link p-0" id="footer-li">4517 Washington <br> Manchester</p></li>
+          </ul>
+        </div>
+      </div>
+      <center class="pt-5">
+        <p class="text-white fw-bold">Copyright 2021 - All right</p>
+      </center>
+    </footer>
+    
+</body>
+</html>
